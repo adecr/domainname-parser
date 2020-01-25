@@ -68,7 +68,7 @@ namespace DomainParser.Tests
             //  The domain should be parsed as 'totallycool'
             Assert.AreEqual<string>("totallycool", outDomain.Domain);
 
-            Debug.WriteLine(
+            Trace.WriteLine(
                 string.Format("Looks like the parsed domain part is: {0}", outDomain.Domain)
                 );
         }
@@ -93,7 +93,7 @@ namespace DomainParser.Tests
             }
             else
             {
-                Debug.WriteLine("Apparently, we couldn't parse photos.verybritish.co.uk");
+                Trace.WriteLine("Apparently, we couldn't parse photos.verybritish.co.uk");
             }
         }
 
@@ -106,7 +106,7 @@ namespace DomainParser.Tests
             //  The domain should be parsed as 'parliament'
             Assert.AreEqual<string>("parliament", outDomain.Domain);
 
-            Debug.WriteLine(
+            Trace.WriteLine(
                 string.Format("Looks like the parsed domain part is: {0}", outDomain.Domain)
                 );
         }
@@ -120,7 +120,7 @@ namespace DomainParser.Tests
             //  The domain should be parsed as 'cntv'
             Assert.AreEqual<string>("cntv", outDomain.Domain);
 
-            Debug.WriteLine(
+            Trace.WriteLine(
                 string.Format("Looks like the parsed domain part is: {0}", outDomain.Domain)
                 );
         }
@@ -134,7 +134,7 @@ namespace DomainParser.Tests
             //  The domain should be parsed as 'er'
             Assert.AreEqual<string>("er", outDomain.Domain);
 
-            Debug.WriteLine(
+            Trace.WriteLine(
                 string.Format("Looks like the parsed domain part is: {0}", outDomain.Domain)
                 );
         }
@@ -148,7 +148,7 @@ namespace DomainParser.Tests
             //  The domain should be parsed as 'www'
             Assert.AreEqual<string>("www", outDomain.Domain);
 
-            Debug.WriteLine(
+            Trace.WriteLine(
                 string.Format("Looks like the parsed domain part is: {0}", outDomain.Domain)
                 );
         }

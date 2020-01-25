@@ -11,30 +11,30 @@ namespace DomainParser.TestConsole {
             //What the hell is d: ????  :) :D (*_*)
             TLDRulesCache.RulesFileLocation = @"d:\" + Path.GetFileName(TLDRulesCache.RulesFileLocation);
 
-            Debug.Listeners.Add(new TextWriterTraceListener(Console.Out));
+            Trace.Listeners.Add(new TextWriterTraceListener(Console.Out));
             DomainTests tests = new DomainTests();
 
-            Debug.WriteLine("-------- ParseNormalDomain");
+            Trace.WriteLine("-------- ParseNormalDomain");
             tests.ParseNormalDomain();
-            Debug.WriteLine("");
+            Trace.WriteLine("");
 
-            Debug.WriteLine("-------- ParseNormalDomainWhereTLDOccursInDomain");
+            Trace.WriteLine("-------- ParseNormalDomainWhereTLDOccursInDomain");
             tests.ParseNormalDomainWhereTLDOccursInDomain();
-            Debug.WriteLine("");
+            Trace.WriteLine("");
 
-            Debug.WriteLine("-------- ParseWildcardDomain");
+            Trace.WriteLine("-------- ParseWildcardDomain");
             tests.ParseWildcardDomain();
-            Debug.WriteLine("");
+            Trace.WriteLine("");
 
-            Debug.WriteLine("-------- ParseWildcardDomainWhereTLDOccursInDomain");
+            Trace.WriteLine("-------- ParseWildcardDomainWhereTLDOccursInDomain");
             tests.ParseWildcardDomainWhereTLDOccursInDomain();
-            Debug.WriteLine("");
+            Trace.WriteLine("");
 
-            Debug.WriteLine("-------- ParseExceptionDomain");
+            Trace.WriteLine("-------- ParseExceptionDomain");
             tests.ParseExceptionDomain();
-            Debug.WriteLine("");
+            Trace.WriteLine("");
 
-            Debug.WriteLine("-------- ParseExceptionDomainWhereTLDOccursInSubdomain");
+            Trace.WriteLine("-------- ParseExceptionDomainWhereTLDOccursInSubdomain");
             tests.ParseExceptionDomainWhereTLDOccursInSubdomain();
 
 
